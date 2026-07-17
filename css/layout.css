@@ -24,9 +24,9 @@
 @media (min-width: 64rem) and (min-height: 40.625rem) {
   .main-wrapper {
     width: min(96vw, 81.25rem);
-    height: calc(100dvh - clamp(5rem, 11.5dvh, 6rem));
-    min-height: 38.75rem;
-    max-height: 47.5rem;
+    height: calc(100dvh - clamp(7rem, 15dvh, 8.5rem));
+    min-height: 36.875rem;
+    max-height: 45rem;
     padding-block: clamp(1rem, 1.7vw, 1.5rem);
     padding-inline: clamp(1.75rem, 2.93vw, 2.5rem);
   }
@@ -38,17 +38,16 @@
       "article-one decorative article-three"
       "article-one article-four article-four";
     grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr) minmax(0, 1.47fr);
-    grid-template-rows: minmax(0, 2.2fr) minmax(0, 0.95fr);
-    row-gap: clamp(0.9rem, 1.35vw, 1.2rem);
-    column-gap: clamp(1.25rem, 2.39vw, 2.05rem);
+    grid-template-rows: minmax(0, 2.55fr) minmax(0, 0.75fr);
+    gap: var(--bento-gap-desktop);
   }
 }
 
 @media (min-width: 64rem) and (max-height: 40.5625rem) {
   .main-wrapper {
     width: min(96vw, 81.25rem);
-    height: calc(100dvh - 2.75rem);
-    max-height: calc(100dvh - 2.75rem);
+    height: calc(100dvh - 3.25rem);
+    max-height: calc(100dvh - 3.25rem);
     padding-block: clamp(0.85rem, 1.5vh, 1rem);
     padding-inline: clamp(1.25rem, 2.4vw, 2rem);
     border-radius: 1.5rem;
@@ -61,9 +60,8 @@
     height: 100%;
     min-height: 0;
     grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr) minmax(0, 1.47fr);
-    grid-template-rows: minmax(0, 2.2fr) minmax(0, 0.95fr);
-    row-gap: 0.75rem;
-    column-gap: clamp(1rem, 1.8vw, 1.4rem);
+    grid-template-rows: minmax(0, 2.5fr) minmax(0, 0.75fr);
+    gap: clamp(0.85rem, 1.5vw, 1.1rem);
   }
 }
 
