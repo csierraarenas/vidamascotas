@@ -4,8 +4,8 @@
 
 ## Estado actual
 
-- Rama de trabajo: `feature/bento-grid-layout`
-- Fase: layout inicial en revisión
+- Rama integrada: `main`
+- Fase: layout base aprobado e integrado en `main`; despliegue pendiente de verificación
 - Tecnologías: HTML5, CSS3 y JavaScript puro
 - Dependencias externas: ninguna
 
@@ -28,6 +28,5 @@
 
 ## Pendiente
 
-- Revisión y aprobación final del layout.
-- Fusión a `main` únicamente después de la aprobación.
+- Verificación del despliegue de Cloudflare Pages.
 - Sustitución futura de textos e imágenes provisionales por contenido definitivo.
