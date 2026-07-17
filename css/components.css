@@ -133,6 +133,19 @@
     border-radius: 1.25rem;
   }
 
+  .bento-card--decorative {
+    width: calc(92% - 60px);
+  }
+
+  .bento-card--article-four {
+    margin-inline-start: 12rem;
+  }
+
+  .bento-card--article-three {
+    width: calc(100% - 15px);
+    height: calc(100% - 5px);
+  }
+
   .bento-card__link {
     gap: 0.5rem;
     padding: 0.9rem;
