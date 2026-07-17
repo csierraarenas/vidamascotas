@@ -27,7 +27,8 @@
     height: calc(100dvh - clamp(7rem, 15dvh, 8.5rem));
     min-height: 36.875rem;
     max-height: 45rem;
-    padding-block: clamp(1.6rem, 2.2vw, 2rem);
+    padding-block-start: clamp(3.25rem, 7dvh, 4.5rem);
+    padding-block-end: clamp(1.6rem, 2.2vw, 2rem);
     padding-inline: clamp(1.75rem, 2.93vw, 2.5rem);
   }
 
