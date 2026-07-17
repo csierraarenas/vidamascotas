@@ -1,0 +1,118 @@
+.bento-card {
+  min-width: 0;
+  min-height: 17rem;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.bento-card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(25, 48, 40, 0.15);
+}
+
+.bento-card--article-one {
+  grid-area: article-one;
+  background: var(--color-sage-deep);
+  color: #fff;
+}
+
+.bento-card--decorative {
+  grid-area: decorative;
+  margin: 0;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--color-sage), var(--color-sand));
+}
+
+.bento-card--decorative img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bento-card--article-three {
+  grid-area: article-three;
+  background: var(--color-sand);
+}
+
+.bento-card--article-four {
+  grid-area: article-four;
+  background: var(--color-cream);
+}
+
+.bento-card__link {
+  display: flex;
+  min-height: 100%;
+  padding: var(--space-4);
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.bento-card__link:focus-visible {
+  outline: 0.25rem solid var(--color-focus);
+  outline-offset: -0.4rem;
+}
+
+.bento-card__label {
+  margin-bottom: auto;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bento-card__title {
+  max-width: 16ch;
+  margin: var(--space-4) 0 var(--space-1);
+  font-size: clamp(1.55rem, 3vw, 2.6rem);
+  line-height: 1.08;
+}
+
+.bento-card__description {
+  max-width: 38ch;
+  margin: var(--space-1) 0 0;
+  color: currentColor;
+  opacity: 0.86;
+}
+
+.bento-card__action {
+  align-self: flex-start;
+  margin-top: var(--space-3);
+  padding-bottom: 0.15rem;
+  border-bottom: 2px solid currentColor;
+  font-weight: 700;
+}
+
+@media (max-width: 56rem) {
+  .bento-card {
+    min-height: 15rem;
+    border-radius: 1.4rem;
+  }
+
+  .bento-card__link {
+    padding: var(--space-3);
+  }
+}
+
+@media (max-width: 38rem) {
+  .bento-card {
+    min-height: 14rem;
+    border-radius: 1rem;
+  }
+
+  .bento-card--decorative {
+    min-height: auto;
+  }
+
+  .bento-card__link {
+    padding: var(--space-3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bento-card {
+    transition: none;
+  }
+}

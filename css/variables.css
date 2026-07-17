@@ -1,0 +1,24 @@
+:root {
+  --bg-image: url("../assets/images/imagen.webp");
+  --color-page-fallback: #dce9df;
+  --color-surface-glass: rgba(255, 255, 255, 0.85);
+  --color-border-glass: rgba(255, 255, 255, 0.55);
+  --color-ink: #17332b;
+  --color-ink-soft: #425f56;
+  --color-sage: #d8e9d6;
+  --color-sage-deep: #315f50;
+  --color-sand: #f4e7cf;
+  --color-cream: #fffaf0;
+  --color-focus: #0b6b55;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --radius-card: 1.75rem;
+  --radius-wrapper: 2.5rem;
+  --shadow-wrapper: 0 1.5rem 4rem rgba(25, 48, 40, 0.18);
+  --shadow-card: 0 0.75rem 1.75rem rgba(25, 48, 40, 0.1);
+  --max-width: 75rem;
+  --transition: 180ms ease;
+}
