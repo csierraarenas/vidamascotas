@@ -4,15 +4,20 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 html {
   min-width: 20rem;
 }
 
 body {
   min-height: 100vh;
-  min-height: 100svh;
+  min-height: 100dvh;
   margin: 0;
-  padding-block: clamp(3rem, 7vh, 4.5rem) clamp(1rem, 3vh, 2rem);
+  padding: var(--space-3) var(--space-2);
   background-color: var(--color-page-fallback);
   background-image: var(--bg-image);
   background-position: center;
@@ -24,9 +29,23 @@ body {
   line-height: 1.5;
 }
 
-@media (max-width: 63.99rem), (max-height: 42.99rem) {
+@media (min-width: 64rem) and (min-height: 40.625rem) {
   body {
-    padding-block: var(--space-3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: clamp(3rem, 7dvh, 4rem) 1rem clamp(0.75rem, 2dvh, 1.25rem);
+  }
+}
+
+@media (min-width: 64rem) and (max-height: 40.5625rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 2rem 1rem 0.5rem;
   }
 }
 
@@ -37,4 +56,10 @@ img {
 
 a {
   color: inherit;
+}
+
+@media (max-width: 38rem) {
+  body {
+    background-attachment: scroll;
+  }
 }
