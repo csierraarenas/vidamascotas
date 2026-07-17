@@ -23,10 +23,11 @@
 
 @media (min-width: 64rem) and (min-height: 40.625rem) {
   .main-wrapper {
-    width: min(92vw, calc((100dvh - 5.5rem) * 1.38), 70rem);
-    max-height: calc(100dvh - 5.5rem);
-    aspect-ratio: 1.38 / 1;
-    padding: clamp(1.25rem, 2vw, 1.75rem);
+    width: min(92vw, 77.5rem);
+    height: calc(100dvh - clamp(5rem, 11.5dvh, 6rem));
+    min-height: 38.75rem;
+    max-height: 47.5rem;
+    padding: clamp(1rem, 1.7vw, 1.5rem);
   }
 
   .bento-grid {
@@ -37,15 +38,15 @@
       "article-one article-four article-four";
     grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr) minmax(0, 1.47fr);
     grid-template-rows: minmax(0, 2.2fr) minmax(0, 0.95fr);
-    gap: clamp(1rem, 1.5vw, 1.25rem);
+    gap: clamp(0.9rem, 1.35vw, 1.2rem);
   }
 }
 
 @media (min-width: 64rem) and (max-height: 40.5625rem) {
   .main-wrapper {
-    width: min(92vw, calc((100dvh - 2.75rem) * 1.38), 70rem);
+    width: min(92vw, 77.5rem);
+    height: calc(100dvh - 2.75rem);
     max-height: calc(100dvh - 2.75rem);
-    aspect-ratio: 1.38 / 1;
     padding: clamp(0.85rem, 1.5vh, 1rem);
     border-radius: 1.5rem;
   }
