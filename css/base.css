@@ -35,7 +35,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
-    padding: clamp(2rem, 5dvh, 3rem) clamp(1rem, 3vw, 2.5rem) clamp(1rem, 2.5dvh, 1.5rem);
+    padding-block: clamp(2rem, 5dvh, 3rem) clamp(1rem, 2.5dvh, 1.5rem);
+    padding-inline: clamp(1rem, 2vw, 2rem);
   }
 }
 
@@ -45,7 +46,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
-    padding: 2rem 1rem 0.5rem;
+    padding-block: 2rem 0.5rem;
+    padding-inline: 1rem;
   }
 }
 
