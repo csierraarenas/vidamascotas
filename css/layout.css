@@ -2,9 +2,14 @@
   width: min(94vw, 70rem);
   margin-inline: auto;
   padding: var(--space-3);
-  background: var(--color-surface-glass);
+  background-color: var(--color-surface-glass);
+  background-image: url("../assets/images/card wrapper.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
   border: 1px solid var(--color-border-glass);
-  border-radius: 2rem;
+  border-radius: var(--radius-wrapper);
   box-shadow: var(--shadow-wrapper);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -52,7 +57,6 @@
     padding-block-start: 2.5rem;
     padding-block-end: clamp(0.85rem, 1.5vh, 1rem);
     padding-inline: clamp(1.25rem, 2.4vw, 2rem);
-    border-radius: 1.5rem;
   }
 
   .bento-grid {
@@ -71,7 +75,6 @@
   .main-wrapper {
     width: calc(100% - 1rem);
     padding: var(--space-2);
-    border-radius: 1.25rem;
   }
 
   .bento-grid {

@@ -1,6 +1,5 @@
 :root {
-  --bg-image: url("../assets/images/decorative-placeholder.webp");
-  --color-page-fallback: #dce9df;
+  --body-background: #2d2d2d;
   --color-surface-glass: rgba(255, 255, 255, 0.85);
   --color-border-glass: rgba(255, 255, 255, 0.55);
   --color-ink: #17332b;
@@ -16,7 +15,7 @@
   --space-4: 2rem;
   --space-5: 3rem;
   --radius-card: 1.75rem;
-  --radius-wrapper: 2.5rem;
+  --radius-wrapper: 40px;
   --shadow-wrapper: 0 1.5rem 4rem rgba(25, 48, 40, 0.18);
   --shadow-card: 0 0.75rem 1.75rem rgba(25, 48, 40, 0.1);
   --max-width: 75rem;
