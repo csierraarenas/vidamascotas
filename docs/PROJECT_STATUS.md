@@ -13,7 +13,7 @@
 
 - Estructura semántica inicial de la página.
 - Composición Bento Grid responsive con cuatro tarjetas.
-- Fondo general y wrapper translúcido.
+- Fondo exterior gris oscuro e imagen local integrada únicamente en el wrapper.
 - Variantes de escritorio, escritorio de poca altura, tableta y móvil.
 - Estados hover y foco visible para navegación con teclado.
 - Imagen decorativa local optimizada.
